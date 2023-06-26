@@ -8,25 +8,50 @@
     <title>Colors</title>
   </head>
   <body>
-    <!-- Default colors -->
-    <!-- white, black, red, green, blue, orange, yellow, purple, lime, emerald, teal, cyan, indigo, violet, fuchsia, pink, rose, sky, gray, slate, zinc, neutral, stone, amber,  -->
-
     <!-- Text Colors -->
+    <p class="text-black">Black don't have shade</p>
+    <p class="text-white bg-black">white don't have shade</p>
+    <p class="text-red-950">Other Colors have shade 50, 100.. to 950</p>
+    <p class="text-sky-950">Default Colors:  white, black, red, green, blue, orange, yellow, purple, lime, emerald, teal, cyan, indigo, violet, fuchsia, pink, rose, sky, gray, slate, zinc, neutral, stone, amber </p>
 
     <!-- Background Colors -->
+    <p class="bg-red-500">color: Red-500</p>
+    <p class="bg-green-600">color: Blue-600</p>
+    <p class="bg-orange-400">color: Orange-400</p>
+    <p class="bg-yellow-100">color: Yellow-100</p>
+    <p class="bg-purple-200">color: Purple-200</p>
+    <p class="bg-lime-300">color: Lime-300</p>
+    <p class="bg-violet-600">color: Violet-600</p>
+    <p class="bNeutral-50">color: Neutral-50</p>
 
     <!-- Text Underline -->
+    <p class="underline decoration-red-500">Decorated Color</p>
 
     <!-- Border Colors -->
+    <input type="text" placeholder="border color" class="border border-green-500">
 
     <!-- Divide Colors -->
+    <ul class="divide-y divide-blue-500">
+      <li>Divide Color</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ul>
 
     <!-- Outline Colors -->
+    <button class="outline outline-yellow-500">button-outline-color</button>
 
     <!-- Box Shadow Colors (Opacity defaults to 100, but you can set it)-->
+    <button class="bg-cyan-500 shadow-lg shadow-cyan-400">shadow-color</button>
+    <button class="shadow-lg shadow-cyan-400/50">shadow-opacity</button>
 
     <!-- Accent Colors -->
+    <input type="checkbox" class="accent-red-500">
 
     <!-- Arbitrary Colors -->
+    <p class="bg-[#427fab] mt-5">Arbitrary Color Code</p>
+    <p class="bg-[rgb(255,0,0)]">RGB: No Space Between RGB Value</p> 
+    <p class="bg-[green]">Arbitrary Color Name</p>
   </body>
 </html>
