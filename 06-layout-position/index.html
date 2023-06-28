@@ -8,29 +8,33 @@
     <title>TailwindCSS</title>
   </head>
   <body>
-    <!-- Positioning -->
-
-    <!-- Top left corner -->
-
-    <!-- Top right corner -->
-
-    <!-- Bottom left corner -->
-
-    <!-- Bottom right corner -->
-
-    <!-- Span top edge -->
-
-    <!-- Span left edge -->
-
-    <!-- Span right edge -->
+    <!-- Positioning and z-index -->
+    <div class="relative w-24 h-24 mx-auto bg-yellow-200">
+      <div class="absolute w-12 h-12 top-0 left-10 bg-green-200 z-10"></div>
+      <div class="absolute w-12 h-12 top-0 right-10 bg-green-300 z-50"></div>
+    </div>
 
     <!-- Span bottom edge -->
+    <div class="relative w-24 h-24 mx-auto bg-yellow-200">
+      <div class="absolute inset-x-0 bottom-0 h-12 bg-green-200"></div>
+    </div>
 
-    <!-- Display Classes -->
+    <!-- Span left edge -->
+    <div class="relative w-24 h-24 mx-auto bg-yellow-200">
+      <div class="absolute inset-y-0 left-0 w-12 bg-green-200"></div>
+    </div>
 
-    <!-- Z-Index -->
+    <!-- Span right edge -->
+    <div class="relative w-24 h-24 mx-auto bg-yellow-200">
+      <div class="absolute inset-y-0 right-0 w-12 bg-green-200"></div>
+    </div>
 
-    <!-- Floats -->
+    <!-- Span top edge -->
+    <div class="relative w-24 h-24 mx-auto bg-yellow-200">
+      <div class="absolute inset-x-0 top-0 h-12 bg-green-200"></div>
+    
+    <!-- Display and Float Classes -->
+    <div>Lorem ipsum <span class="inline float-right">lorem</span>dolor sit amet consectetur adipisicing elit. Natus, excepturi animi! Ipsam doloribus accusantium placeat nihil ea culpa dolores ipsa omnis debitis. Quibusdam excepturi incidunt vero nam sunt perspiciatis veritatis.</div>
   </body>
 </html>
 
