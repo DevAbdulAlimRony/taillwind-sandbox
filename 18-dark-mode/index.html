@@ -1,17 +1,52 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode : 'class'
+      }
+    </script>
     <title>Dark Mode</title>
+    <style>
+      .toggle-checkbox:checked {
+        right: 0;
+        border-color: #68D391;
+      }
+      .toggle-checkbox:checked + .toggle-label {
+        background-color: #68D391;
+      }
+      </style>
   </head>
   <body>
-    <!-- By default, you can have your project use whatever mode your OS is using. You can use "dark:{class}". You can also set your config to use a class instead of using your OS mode -->
+    <!-- By default, we can have your project use whatever mode our OS is using. We can use "dark:{class}". We can also set our config to use a class instead of using our OS mode -->
+    <!-- component -->
+  <div class="flex items-center max-w-sm p-6 mx-auto bg-white dark:bg-black rounded-xl shadow-lg space-x-4 transition">
+      <img src="../assets/img/warning.svg" alt="" class="w-12 h-12"/>
+      <div>
+        <h2 class="text-xl font-medium text-black dark:text-white">Are you sure ?</h2>
+      <h3 class="text-slate-500">If you delete this item, all will be deleted also</h3>
+      </div>
+   </div> 
+                 
+  <div class="relative inline-block w-10 mr-2 align-middle select-none transition duration-200 ease-in">
+      <input type="checkbox" name="toggle" id="toggle" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"/>
+      <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"></label>
+  </div>
+  <label for="toggle" class="text-xs text-gray-700">Dark Mode</label>
+
+  <script>
+    document.getElementById('toggle').addEventListener('change', function(){
+      if(this.checked){
+        document.documentElement.classList.add('dark');
+      }
+      else{
+        document.documentElement.classList.remove('dark');
+      }
+    })
+  </script>
   </body>
 </html>
-
-<!-- Credit for toggle button style
-https://tailwindcomponents.com/component/toggle-switch
- -->
