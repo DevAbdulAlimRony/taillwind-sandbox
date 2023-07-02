@@ -1,0 +1,28 @@
+1. Install Node
+
+2. npm = node package manager, npx = node package execute (execute any javascript package without even installing it)
+
+
+4. install tailwindcss/creating node modules folder = npm i -D tailwindcss (i= install, D = Developer Dependency, not for production)
+
+5. Creating Config File = npx tailwindcss init
+
+6. Locating Files Containing Tailwind = config file -> content object edit like ./*.html
+
+7. Create input folder to put the directives of base, component and utilities
+
+8. Writing script for input and outpit file in package.json = like in script : "build" = "tailwindcss -i ./input.css -o ./styles/tailwind.css", "watch" = "tailwindcss -i ./input.css -o ./styles/tailwind.css -watch"
+
+9. Now, we can use this command = npm run build (It will automatically create the output folder and file like styles-tailwind.css), npm run watch
+
+10. Create the html file and link it with output css in link tag.
+
+11. npm run watch
+
+12. If you want to write custom css styles for specific class/tag, use @layer directive. In layer directive, also can use @apply to use existing tailwind class. It solves the problem of so many classes or repeating classes in html file.
+
+13. We can configure our own style in configuration file and can use it.
+
+14. We can use media screen function.
+
+15. Optional PostCSS and WebPack
